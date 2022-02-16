@@ -104,6 +104,6 @@ git commit -m "版本訊息"
 ![7](/commit.png)
 
 # push pull 實作
-> 1. push 
+> 1. push 123
 
 # GitFlow
