@@ -110,6 +110,13 @@ git commit -m "版本訊息"
 
 > 2. pull 
 
+![9.0](/1.png)
 ![9](/pull.png)
 
 # GitFlow
+> * 以特性驅動開發 (Feature-driven development，簡稱 FDD)，是一個模型驅動(model-driven)、短期迭代(short-iteration)的過程，過程中會有起點與終點。
+
+> * Git flow 提出不同的分支功能，分別有 master、develop 、hotfix、release、feature 五種分支。
+
+> * 長期分支- master & develop 分支：因為這兩個分支會一直存在於整個GitFlow，不會被刪掉。
+> * 短期分支- hotfix、release、feature 分支：因為專案完成後他們都會被合併到 master & develop 分支裡，就會被刪掉。
