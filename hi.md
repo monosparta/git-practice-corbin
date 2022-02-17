@@ -48,7 +48,14 @@
 > 28. git branch -m 新的branch名稱：修改branch的名稱 (要再想修改的branch上)。
 > 29. git checkout 遠端brunch名稱：把遠端brunch載下來。
 # .gitignore配置
-
+ * 用gitignore 來把一些檔案忽略，使得這些檔案不會被git 追蹤(就是把不想上傳或是不想被別人看見的檔案的加入gitignore)。
+* gitignore 文件規範：
+    - 所有空行或者以"#"為開頭的行都會被忽略。
+    - 可以使用標準的glob模式匹配。
+    - 匹配模式可以以(/)開頭防止遞歸/迴。
+    - 匹配模式可以以(/)結尾指定目錄。
+    - 要忽略指定文件以外的目錄或文件，可以在文件前加上"!"。
+* glob模式：
 # 分支的使用方法&介紹
 * 介紹：分支是為了將修改記錄的整體流程分開儲存，讓分開的分支不受其他分支的影響，所以在同一個數據庫裡可以同時進行多個不同的修改。分開的分支還是可以和其他分支合併的。
  * 使用方法：
@@ -119,4 +126,15 @@ git commit -m "版本訊息"
 > * Git flow 提出不同的分支功能，分別有 master、develop 、hotfix、release、feature 五種分支。
 
 > * 長期分支- master & develop 分支：因為這兩個分支會一直存在於整個GitFlow，不會被刪掉。
+
+- master 分支：建立版本控制時所預設的分支，主要放穩定且能隨時上線的版本。
+
+- develop 分支：主要開發的分支，所有短期分支的基礎分支。
+
 > * 短期分支- hotfix、release、feature 分支：因為專案完成後他們都會被合併到 master & develop 分支裡，就會被刪掉。
+
+- Hotfix分支：主要用來修復的分支，修復完會併回master分支，也會合併至develop分支。
+
+- Release 分支：在 Develop 分支發布正式版本到 Master 分支之前，可以先進行一個預備發布的本版本進行測試。
+
+- Feature 分支：主要用來新增功能的分支。
