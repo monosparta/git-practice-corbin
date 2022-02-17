@@ -62,7 +62,7 @@
 ```
 file/
 ```
-    說明：忽略目錄file下的全部內容；不管是根目錄下的/file/目錄，還是某個子目錄/123git /file/目錄，都會被忽略。
+    說明：忽略目錄file下的全部內容；不管是根目錄下的/file/目錄，還是某個子目錄/123/file/目錄，都會被忽略。
 2. 規則：
 ```
 /file/
@@ -89,31 +89,31 @@ git branch imbranch
 ```
 git branch
 ```
-![2](/look.png)
+![2](/photos/look.png)
 
 > 3. 切換分支：
 ```
 git checkout imbranch
 ```
-![3](/seitch.png)
+![3](/photos/seitch.png)
 ```
 git checkout -b 新分支名稱
 
 *直接建立新分支且同時切換過去
 ```
-![4](/newnew.png)
+![4](/photos/newnew.png)
 
 > 4. 合併分支：
 ```
 git merge 分支名稱
 ```
-![5](/merge.png)
+![5](/photos/merge.png)
 
 > 5. 刪除分支：
 ```
 git branch -d 分支名稱
 ```
-![6](/delete.png)
+![6](/photos/delete.png)
 
 # commit的介紹&使用
 > 1. 介紹：開發者要將修改檔案後的專案內容，增加為一個新的專案版本，這個動作就稱為提交(commit)
@@ -127,17 +127,17 @@ git commit
 git commit -m "版本訊息"
 *無須進入編輯器直接寫版本訊息
 ```
-![7](/commit.png)
+![7](/photos/commit.png)
 
 # push pull 實作
 > 1. push 
 
-![8](/push.png)
+![8](/photos/push.png)
 
 > 2. pull 
 
-![9.0](/1.png)
-![9](/pull.png)
+![9.0](/photos/1.png)
+![9](/photos/pull.png)
 
 # GitFlow
 > * 以特性驅動開發 (Feature-driven development，簡稱 FDD)，是一個模型驅動(model-driven)、短期迭代(short-iteration)的過程，過程中會有起點與終點。
