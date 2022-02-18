@@ -83,7 +83,7 @@ file/
 ```
 git branch imbranch
 ```
-![1](/nwe.png)
+![1](/photos/nwe.png)
 
 > 2. 顯示分支列表：(有*號的就是現在的分支)
 ```
